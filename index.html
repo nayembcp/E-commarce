@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="this is an ecommerce project for making 
+    nayem express">
+    <title>Ecommerce Project</title>
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- navbar starts here -->
+    <i class="fas fa-bars fa-2x" id="menu-icon"></i>
+    <nav id="menu" class="hidden">
+        <ul class="nav_upper 
+        flex-space-around">
+            <li class="nav_list"><a href="index.html" class="nav_link">Home</a></li>
+            <li class="nav_list"><a href="register.html" class="nav_link">Register</a></li>
+            <li class="nav_list"><a href="login.html" class="nav_link">Login</a></li>
+            <li class="nav_list"><a href="index.html" class="nav_link">Logout</a></li>
+            <li class="nav_list"><a href="contact.html" class="nav_link">Contact</a></li>
+            <li class="nav_list"><a href="profile.html" class="nav_link"><img class="profile-icon" src="./images/faq-1.jpg" alt="profile icon"></a></li>
+        </ul>
+        <ul class="nav_lower 
+        flex-space-around">
+            <li class="nav_list"><a href="index.html" class="nav_brand nav_link">Nayem Express</a></li>
+            <li class="nav_list"><a href="cart.html" class=" nav_link"><span><i class="fa-solid fa-cart-shopping"></i></span>Cart 2 products - $124.00</a></li>
+        </ul>
+    </nav>
+    <!-- navbar ends here -->
+
+    <!-- header starts here -->
+    <header class="header">
+        <div class="banner flex-space-around">
+            <marquee class="banner_title" behavior="" direction="">হ্যালো.... চাটমোহর বাসি, আপনার নিত্য প্রয়োজনীয় যেকোনো পন্য অর্ডার করতে পারেন Fresh Corner এ </marquee>
+            <div class="features flex-space-around">
+                <article class="feature flex-center">
+                    <i class="fa-solid fa-truck-fast feature_icon"></i>
+                    <h3>Shipping with 7 days</h3>
+                </article>
+                <article class="feature flex-center">
+                    <i class="fa-solid fa-repeat feature_icon"></i>   
+                    <h3>Support 24/7</h3>
+                </article>
+                <article class="feature flex-center">
+                    <i class="fa-solid fa-credit-card feature_icon"></i> 
+                    <h3>Safe payment</h3>
+                </article>
+            </div>
+        </div>
+    </header>
+    <!-- header ends here -->
+    <main class="flex-center">
+        <div class="sidebar">
+            <section class="categories-section">
+                <h3 class="section-title">Categories</h3>
+                <ul class="list">
+                    <li class="list_item">
+                        <label for="vegetable"><input type="checkbox" name="vegetable" id="vegetable" value="vegetable">শাক সবজি</label>
+                    </li>
+                    <li class="list_item">
+                        <label for="vegetable"><input type="checkbox" name="vegetable" id="vegetable" value="vegetable">শাক সবজি</label>
+                    </li>
+                    <li class="list_item">
+                        <label for="vegetable"><input type="checkbox" name="vegetable" id="vegetable" value="vegetable">শাক সবজি</label>
+                    </li>
+                    <li class="list_item">
+                        <label for="vegetable"><input type="checkbox" name="vegetable" id="vegetable" value="vegetable">শাক সবজি</label>
+                    </li>
+                    <li class="list_item">
+                        <label for="vegetable"><input type="checkbox" name="vegetable" id="vegetable" value="vegetable">শাক সবজি</label>
+                    </li>
+                    <li class="list_item">
+                        <label for="vegetable"><input type="checkbox" name="vegetable" id="vegetable" value="vegetable">শাক সবজি</label>
+                    </li>
+                    <li class="list_item">
+                        <label for="vegetable"><input type="checkbox" name="vegetable" id="vegetable" value="vegetable">শাক সবজি</label>
+                    </li>
+                </ul>
+            </section>
+            <section class="shippinge-section">
+                <h3 class="section-title">Shipping Options</h3>
+                <ul class="list">
+                    <li class="list_item">
+                        <label for="free"><input type="radio" name="shipping" id="free" value="free">Free Shipping</label>
+                    </li>
+                    <li class="list_item">
+                        <label for="paid"><input type="radio" name="shipping" id="paod" value="paid">paid Shipping</label>
+                    </li>
+                </ul>
+            </section>
+        </div>
+        <div class="main-content">
+            <section class="actions flex-space-around">
+                <div class="actions_sort">
+                    <label for="sort">Sort By: </label>
+                    <select name="sort" id="sort">
+                        <option value="sold">Most sold first</option>
+                        <option value="rating">Most rated first</option>
+                        <option value="price">Cheapest first</option>
+                        <option value="arrival">Newest first</option>
+                        <option value="discount">Biggest discount first</option>
+                    </select>
+                </div>
+
+                <div class="actions_search">
+                    <input type="text" placeholder="Search products">
+                    <button class="btn"><i class="fa-sharp fa-solid fa-magnifying-glass"></i></button>
+                </div>
+            </section>
+            <!-- product section starts here -->
+            <section class="products">
+                <article class="product card">
+                    <div class="badge">
+                        <span> 5 in stock</span>
+                        <hr class="hr-design">
+                        <span>3 sold</span>
+                    </div>
+                    <img class="product_img" src="./images/product/deal_card_1.jpg" alt="product">
+                    <div class="product_body">
+                        <h3 class="product_name">ড্রাগন</h3>
+                        <p>
+                            <span class="dot green"></span>
+                            <span class="dot black"></span>
+                            <span class="dot red"></span>
+                        </p>
+                        <p class="product_description">
+                            ড্রাগন ফল খোসা ফেলে জুস করে খেতে পারেন। চাইলে সালাদ হিসেবেও খেতে পারেন। আবার সাধারণ ফলের 
+                            মতো কেটেও খেতে পারেন। তাপে পুষ্টিগুণ নষ্ট হয়ে যায়, তাই রান্না করে না খাওয়াই ভালো... <a 
+                            href="/product.html" class="learn-more">Learn More
+                            </a>
+                        </p>
+                        <h4 class="product_price">250</h4>
+                        <p class="product_rating">Rating: 4.5/5</p>
+                        <button class="btn product_button">Add To Cart</button>
+                    </div>
+                </article>
+                <article class="product card">
+                    <div class="badge">
+                        <span> 5 in stock</span>
+                        <hr class="hr-design">
+                        <span>3 sold</span>
+                    </div>
+                    <img class="product_img" src="./images/product/deal_card_1.jpg" alt="product">
+                    <div class="product_body">
+                        <h3 class="product_name">ড্রাগন</h3>
+                        <p>
+                            <span class="dot green"></span>
+                            <span class="dot black"></span>
+                            <span class="dot red"></span>
+                        </p>
+                        <p class="product_description">
+                            ড্রাগন ফল খোসা ফেলে জুস করে খেতে পারেন। চাইলে সালাদ হিসেবেও খেতে পারেন। আবার সাধারণ ফলের 
+                            মতো কেটেও খেতে পারেন। তাপে পুষ্টিগুণ নষ্ট হয়ে যায়, তাই রান্না করে না খাওয়াই ভালো... <a 
+                            href="/product.html" class="learn-more">Learn More
+                            </a>
+                        </p>
+                        <h4 class="product_price">250</h4>
+                        <p class="product_rating">Rating: 4.5/5</p>
+                        <button class="btn product_button">Add To Cart</button>
+                    </div>
+                </article>
+                <article class="product card">
+                    <div class="badge">
+                        <span> 5 in stock</span>
+                        <hr class="hr-design">
+                        <span>3 sold</span>
+                    </div>
+                    <img class="product_img" src="./images/product/deal_card_1.jpg" alt="product">
+                    <div class="product_body">
+                        <h3 class="product_name">ড্রাগন</h3>
+                        <p>
+                            <span class="dot green"></span>
+                            <span class="dot black"></span>
+                            <span class="dot red"></span>
+                        </p>
+                        <p class="product_description">
+                            ড্রাগন ফল খোসা ফেলে জুস করে খেতে পারেন। চাইলে সালাদ হিসেবেও খেতে পারেন। আবার সাধারণ ফলের 
+                            মতো কেটেও খেতে পারেন। তাপে পুষ্টিগুণ নষ্ট হয়ে যায়, তাই রান্না করে না খাওয়াই ভালো... <a 
+                            href="/product.html" class="learn-more">Learn More
+                            </a>
+                        </p>
+                        <h4 class="product_price">250</h4>
+                        <p class="product_rating">Rating: 4.5/5</p>
+                        <button class="btn product_button">Add To Cart</button>
+                    </div>
+                </article>
+                <article class="product card">
+                    <div class="badge">
+                        <span> 5 in stock</span>
+                        <hr class="hr-design">
+                        <span>3 sold</span>
+                    </div>
+                    <img class="product_img" src="./images/product/deal_card_1.jpg" alt="product">
+                    <div class="product_body">
+                        <h3 class="product_name">ড্রাগন</h3>
+                        <p>
+                            <span class="dot green"></span>
+                            <span class="dot black"></span>
+                            <span class="dot red"></span>
+                        </p>
+                        <p class="product_description">
+                            ড্রাগন ফল খোসা ফেলে জুস করে খেতে পারেন। চাইলে সালাদ হিসেবেও খেতে পারেন। আবার সাধারণ ফলের 
+                            মতো কেটেও খেতে পারেন। তাপে পুষ্টিগুণ নষ্ট হয়ে যায়, তাই রান্না করে না খাওয়াই ভালো... <a 
+                            href="/product.html" class="learn-more">Learn More
+                            </a>
+                        </p>
+                        <h4 class="product_price">250</h4>
+                        <p class="product_rating">Rating: 4.5/5</p>
+                        <button class="btn product_button">Add To Cart</button>
+                    </div>
+                </article>
+                <article class="product card">
+                    <div class="badge">
+                        <span> 5 in stock</span>
+                        <hr class="hr-design">
+                        <span>3 sold</span>
+                    </div>
+                    <img class="product_img" src="./images/product/deal_card_1.jpg" alt="product">
+                    <div class="product_body">
+                        <h3 class="product_name">ড্রাগন</h3>
+                        <p>
+                            <span class="dot green"></span>
+                            <span class="dot black"></span>
+                            <span class="dot red"></span>
+                        </p>
+                        <p class="product_description">
+                            ড্রাগন ফল খোসা ফেলে জুস করে খেতে পারেন। চাইলে সালাদ হিসেবেও খেতে পারেন। আবার সাধারণ ফলের 
+                            মতো কেটেও খেতে পারেন। তাপে পুষ্টিগুণ নষ্ট হয়ে যায়, তাই রান্না করে না খাওয়াই ভালো... <a 
+                            href="/product.html" class="learn-more">Learn More
+                            </a>
+                        </p>
+                        <h4 class="product_price">250</h4>
+                        <p class="product_rating">Rating: 4.5/5</p>
+                        <button class="btn product_button">Add To Cart</button>
+                    </div>
+                </article>
+                <article class="product card">
+                    <div class="badge">
+                        <span> 5 in stock</span>
+                        <hr class="hr-design">
+                        <span>3 sold</span>
+                    </div>
+                    <img class="product_img" src="./images/product/deal_card_1.jpg" alt="product">
+                    <div class="product_body">
+                        <h3 class="product_name">ড্রাগন</h3>
+                        <p>
+                            <span class="dot green"></span>
+                            <span class="dot black"></span>
+                            <span class="dot red"></span>
+                        </p>
+                        <p class="product_description">
+                            ড্রাগন ফল খোসা ফেলে জুস করে খেতে পারেন। চাইলে সালাদ হিসেবেও খেতে পারেন। আবার সাধারণ ফলের 
+                            মতো কেটেও খেতে পারেন। তাপে পুষ্টিগুণ নষ্ট হয়ে যায়, তাই রান্না করে না খাওয়াই ভালো... <a 
+                            href="/product.html" class="learn-more">Learn More
+                            </a>
+                        </p>
+                        <h4 class="product_price">250</h4>
+                        <p class="product_rating">Rating: 4.5/5</p>
+                        <button class="btn product_button">Add To Cart</button>
+                    </div>
+                </article>
+            </section>
+
+            <div class="pagination">
+                <button class="btn paginaton_btn">
+                    <i class="fas fa-less-than"></i>
+                </button>
+                <button class="btn paginaton_btn">2</button>
+                <button class="btn paginaton_btn">3</button>
+                <button class="btn paginaton_btn">4</button>
+                <button class="btn paginaton_btn">5</button>
+                <button class="btn paginaton_btn">6</button>
+                <button class="btn paginaton_btn">7</button>
+                <button class="btn paginaton_btn">8</button>
+                <button class="btn paginaton_btn">9</button>
+                <button class="btn paginaton_btn">...</button>
+                <button class="btn paginaton_btn">50</button>
+                <button class="btn paginaton_btn">
+                    <i class="fas fa-greater-than"></i>
+                </button>
+            </div>
+            <!-- product section ends here -->
+        </div>
+    </main>
+    <!-- footer starts here -->
+    <footer class="footer flex-space-around">
+        <div class="flex-space-around">
+            <label for="subscribe">Subscribe to Newsletter</label>
+            <input type="email" id="subscribe" name="subscribe" class="footer_input" placeholder="Your Email Address">
+            <button class="btn btn_subscribe">Subscribe</button>
+        </div>
+        <div>
+            <p> &copy; Copyright 2024 Nayem Express. All rights rserved</p>
+        </div>
+    </footer>
+    <!-- footer ends here -->
+    <script src="./scripts/index.js"></script>
+</body>
+</html>
